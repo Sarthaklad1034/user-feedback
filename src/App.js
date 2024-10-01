@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import FeedbackForm from './components/FeedbackForm/FeedbackForm';
 
 function App() {
   return (
@@ -20,6 +22,20 @@ function App() {
       </header>
     </div>
   );
+    const handleSubmit = (formData) => {
+        // Here you would typically send the data to a server
+        console.log('Form submitted:', formData);
+        alert('Thank you for your feedback!');
+    };
+
+    return ( <
+        div className = "App" >
+        <
+        FeedbackForm onSubmit = { handleSubmit }
+        /> <
+        /div>
+    );
 }
 
+export default App;
 export default App;
